@@ -28,10 +28,10 @@ public class EmpWage{
 	totalEmpHrs +=empHrs;
 	System.out.println("Day#: " + totalWorkingDays + " EMpe Hr: " +empHrs);
 	
-	totalEmpWage += empWage;
-	System.out.println(totalWorkingDays+" "+totalEmpHrs);
-	
 	empWage = totalEmpHrs * EMP_RATE_PER_HOUR;
+	totalEmpWage += empWage;
+	
+	System.out.println(totalWorkingDays+" "+totalEmpHrs);
 	System.out.println("Total Emp Wage: " + totalEmpWage);
 	}
 	return totalEmpWage;	
